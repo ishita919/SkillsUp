@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillsUp - Soft Skills Courses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="contain">
+            <img src="\image\11zon_cropped (1).png" alt="SkillsUp Logo" >
+            <h2>SkillsUp:</h2>
+            <p>Enhance Your Soft Skills with Our Courses</p>
+        </div>
+        
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <marquee behavior="scroll" direction="left"><h2>Welcome to SkillsUp: Explore our soft skills courses to boost your career</h2></marquee>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="container">
+            <h2>Featured Courses</h2>
+
+            <div class="course" id="course1">
+                <img src="\image\EC.jpg" alt="Course 1 - Effective Communication" style="width: 400px; height: 400px;">
+                <h3>Effective Communication</h3>
+                <p>Learn the art of effective communication for personal and professional success.</p>
+                <p class="price">₹200</p>
+                <button onclick="redirectToRegistration('course1')">Enroll Now</button>
+            </div>
+
+            <div class="course" id="course2">
+                <img src="\image\TM.jpg" alt="Course 2 - Time Management Mastery" style="width: 400px; height: 350px;">
+                <h3>Time Management Mastery</h3>
+                <p>Master the skill of time management to achieve your goals efficiently.</p>
+                <p class="price">₹200</p>
+                <button onclick="redirectToRegistration('course2')">Enroll Now</button>
+            </div>
+
+            <div class="course" id="course3">
+                <img src="\image\RSM.jpg" alt="Course 3 - Relational Stress Management" style="width: 400px; height: 350px;">
+                <h3>Relational Stress Management</h3>
+                <p>Learn strategies to manage relational stress effectively.</p>
+                <p class="price">₹200</p>
+                <button onclick="redirectToRegistration('course3')">Enroll Now</button>
+            </div>
+
+            <div class="course" id="course4">
+                <img src="\image\BL.jpg" alt="Course 4 - Body Language" style="width: 400px; height: 350px;">
+                <h3>Body Language</h3>
+                <p>Master the art of non-verbal communication through body language.</p>
+                <p class="price">₹200</p>
+                <button onclick="redirectToRegistration('course4')">Enroll Now</button>
+            </div>
+
+            <div class="course" id="course5">
+                <img src="\image\PG.jpg" alt="Course 5 - Personal Grooming" style="width: 400px; height: 350px;">
+                <h3>Personal Grooming</h3>
+                <p>Enhance your personal appearance and grooming habits.</p>
+                <p class="price">₹200</p>
+                <button onclick="redirectToRegistration('course5')">Enroll Now</button>
+            </div>
+
+            <div class="course" id="course6">
+                <img src="\image\IP.jpg" alt="Course 6 - Interview Preparation" style="width: 400px; height: 350px;">
+                <h3>Interview Preparation</h3>
+                <p>Prepare effectively for job interviews with our comprehensive course.</p>
+                <p class="price">₹200</p>
+                <button onclick="redirectToRegistration('course6')">Enroll Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>SkillsUp is dedicated to enhancing your career prospects through specialized soft skills training. We believe that effective communication, time management, and personal development are crucial for professional success.</p>
+            <p>Our courses are designed by industry experts to provide practical knowledge and hands-on experience. Whether you are starting your career or aiming for advancement, SkillsUp offers the tools and resources to help you achieve your goals.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions? Fill out the form below or reach out to us directly!</p>
+            
+            <form action="contact_sucess.html" >
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" placeholder="Write down your query..."    required></textarea><br><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SkillsUp. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function redirectToRegistration(courseId) {
+            
+            if (courseId === 'course1') {
+                window.location.href = 'registration_course1.html';
+            } else if (courseId === 'course2') {
+                window.location.href = 'registration_course2.html';
+            }  else if (courseId === 'course3') {
+                window.location.href = 'registration_course3.html';
+            } else if (courseId === 'course4') {
+                window.location.href = 'registration_course4.html';
+            } else if (courseId === 'course5') {
+                window.location.href = 'registration_course5.html';
+            } else if (courseId === 'course6') {
+                window.location.href = 'registration_course6.html';
+            }
+        }
+    </script>
+</body>
+</html>
